@@ -1,21 +1,56 @@
 // var shoesArticle = JSON.parse(shoes);
-console.log(shoesArticle[1].Quantity);
 
-for (var i = 0; i < shoesArticle.length; i++) {
+var i = 0;
+
+//create product information from json
+for (i = 0; i < shoesArticle.length; i++) {
   $("<div />", {
-    "html": "<div class='image'><img src='" + shoesArticle[i].Img_Link + "'></div><p class='modell'>" + shoesArticle[i].Modell + "</p>" + "<p class='marke'>" + shoesArticle[i].Marke + "</p><button id='" + shoesArticle[i].id + "'>Add to Cart</button>"
+    "html": "<div class='image'><img src='" + shoesArticle[i].Img_Link + "'></div><p class='modell'>" + shoesArticle[i].Modell + "</p>" + "<p class='marke'>" + shoesArticle[i].Marke + "</p><p class='preis'>" + shoesArticle[i].Preis + "</p><button class='buttonAdd' id='buttonAdd-" + shoesArticle[i].id + "'>Add to Cart</button>"
   }).appendTo('#shoppinglist');
  }
 
-
-function updateArticles () {
-    for (var i = 0; i < shoesArticle.length; i++) {
-    	shoesArticle[i].Quantity += 1;
+//add eventlistener for Ad to Cart button
+$(".buttonAdd").on("click", function() {
+	for (i = 0; i < shoesArticle.length; i++) {
+   		if ("buttonAdd-" + shoesArticle[i].id == $(this).attr("id")) {
+   			shoesArticle[i].Quantity += 1;
+   		}
     }
+console.table(shoesArticle);
+updateCart();
+calculateSum();
+});
+
+$(".buttonDelete").on("click", function() {
+	for (i = 0; i < shoesArticle.length; i++) {
+   		if ("buttonDel-" + shoesArticle[i].id == $(this).attr("id")) {
+   			shoesArticle[i].Quantity = 0;
+   		}
+    }
+console.table(shoesArticle);
+console.log("gaga");
+calculateSum();
+});
+
+//update cart
+function updateCart () {
+	$("#cart").html("");
+	for (i = 0; i < shoesArticle.length; i++) {
+		if (shoesArticle[i].Quantity > 0) {
+			$("<div />", {
+				"html": "<div class='image'><img src='" + shoesArticle[i].Img_Link + "'></div><div><p class='modell'>" + shoesArticle[i].Modell + "</p><p class='marke'>" + shoesArticle[i].Preis + "</p></div><p>" + shoesArticle[i].Quantity + "</p><button class='buttonDelete' id='buttonDel-" + shoesArticle[i].id + "'>Delete</button>"
+			}).appendTo("#cart");
+		}
+	}
 }
 
-updateArticles();
-console.table(shoesArticle[i].Quantity);
+function calculateSum () {
+	var sum = 0;
+	for (i = 0; i < shoesArticle.length; i++) {
+		sum += shoesArticle[i].Preis * shoesArticle[i].Quantity
+	}
+	console.log(sum)
+}
 
 
 // for (var i = 0; i < shoesArticle.length; i++) {

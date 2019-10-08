@@ -1,142 +1,94 @@
-var shoes = `[{
-
-	"id": "01",
-
+var shoesArticle = [{"id": "01",
 	"Typ": "Sneaker ",
-
 	"Marke": "Adidas",
-
 	"Modell": "Terminator Predator 2 ",
-
 	"Img_Link": "img/01.jpg",
-
-	"Preis": 50
-
-
+	"Preis": 50,
+	"Quantity": 0
    }, {
 
 	"id": "02",
-
 	"Typ": "Flip-Flop ",
-
 	"Marke": "Balenciaga",
-
 	"Modell": "The coolest flipflop ",
-
-	"Img_Link": "img/02.jpg",
-	
-	"Preis": 5000
-
+	"Img_Link": "img/02.jpg",	
+	"Preis": 5000,
+	"Quantity": 0
 	}, {
 
 	"id": "03",
-
 	"Typ": "High Heels shoes ",
-
 	"Marke": "High",
-
 	"Modell": "Nice High Heels",
-
-	"Img_Link": "img/03.jpg",
-	
-	"Preis": 500
-
+	"Img_Link": "img/03.jpg",	
+	"Preis": 500,
+	"Quantity": 0
 	}, {
 
 	"id": "04",
-
 	"Typ": "Brogue ",
-
 	"Marke": "Church's",
-
 	"Modell": "Classic",
-
-	"Img_Link": "img/04.jpg",
-	
-	"Preis": 300
-
+	"Img_Link": "img/04.jpg",	
+	"Preis": 300,
+	"Quantity": 0
 	}, {
 
 	"id": "05",
-
 	"Typ": "Sandals ",
-
 	"Marke": "Nike",
-
-	"Modell": "Overpriced Plastic Sandals  ",
-
-	"Img_Link": "img/05.jpg",
-	
-	"Preis": 50
+	"Modell": "Overpriced Plastic Sandals",
+	"Img_Link": "img/05.jpg",	
+	"Preis": 50,
+	"Quantity": 0
 
 	}, {
 
 	"id": "06",
-
 	"Typ": "Running Shoes ",
-
 	"Marke": "Mizuno",
-
 	"Modell": "Wave 2019",
-
-	"Img_Link": "img/06.jpg",
-	
-	"Preis": 150
+	"Img_Link": "img/06.jpg",	
+	"Preis": 150,
+	"Quantity": 0
 
 	}, {
 
 	"id": "07",
-
 	"Typ": "Leather Shoes ",
-
 	"Marke": "D'Acquasparta",
-
 	"Modell": "Everyday",
-
-	"Img_Link": "img/07.jpg",
-	
-	"Preis": 200
+	"Img_Link": "img/07.jpg",	
+	"Preis": 200,
+	"Quantity": 0
 
 	}, {
 
 	"id": "08",
-
 	"Typ": "Sneaker ",
-
 	"Marke": "Converse",
-
 	"Modell": "Athletics Bio",
-
-	"Img_Link": "img/08.jpg",
-	
-	"Preis": 180
+	"Img_Link": "img/08.jpg",	
+	"Preis": 180,
+	"Quantity": 0
 
 	}, {
 
 	"id": "09",
-
-	"Typ": "Sneaker ",
-
+	"Typ": "Sneaker",
 	"Marke": "Tommy Hilfiger",
-
 	"Modell": "Cool knowledgeable guy",
-
-	"Img_Link": "img/09.jpg",
-	
-	"Preis": 200
+	"Img_Link": "img/09.jpg",	
+	"Preis": 200,
+	"Quantity": 0
 
 	}, {
 
 	"id": "10",
-
-	"Typ": "Sneaker ",
-
+	"Typ": "Sneaker",
 	"Marke": "Nike",
-
 	"Modell": "We are not exploiting kids to make this shoe",
-
-	"Img_Link": "img/10.jpg",
-	
-	"Preis": 100
-
-	}]`
+	"Img_Link": "img/10.jpg",	
+	"Preis": 100,
+	"Quantity": 0
+	}];

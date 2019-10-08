@@ -2,9 +2,36 @@
 <html>
 <head>
 	<title>Day 2 | Basic 1</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		
+	</style>
 </head>
 <body>
+
+	 <img src="img/christmas-bell.png" alt="" id="christmas-bell">
+	 <img src="img/gift-box.png" alt="" id="gift-box">
+	 <img src="img/santa-claus.png" alt="" id="santa-claus">
+
+	 <h1></h1>
+
+<script>
+	$("#christmas-bell").on("click", function() {
+		$("h1").text("You clicked on the Christmas bell");
+	});
+
+	$("#gift-box").on("click", function() {
+		$("h1").text("You clicked on the Gift box");
+	});
+
+	$("#santa-claus").on("click", function() {
+		$("h1").text("You clicked on the Santa Claus");
+	});
+</script>
 
 </body>
 </html>

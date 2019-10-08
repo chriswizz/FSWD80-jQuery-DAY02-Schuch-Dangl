@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<style>
+		#matrix {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			width: 50%;
+		}
+
+		img {
+			width: 30%;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="matrix">
+		<img src="img/gift-box.png" alt="">		
+		<img src="img/santa-claus.png" alt="" id="santa1" class="santa">
+		<img src="img/gift-box.png" alt="">
+		<img src="img/gift-box.png" alt="">
+		<img src="img/santa-claus.png" alt="" id="santa2" class="santa">
+		<img src="img/gift-box.png" alt="">
+		<img src="img/santa-claus.png" alt="" id="santa3" class="santa">
+		<img src="img/gift-box.png" alt="">
+		<img src="img/santa-claus.png" alt="" id="santa4" class="santa">
+	</div>
+</body>
+
+<script charset="utf-8">
+	$(".santa").on("click", function () {
+		$ (this).hide();
+	})
+	
+
+
+</script>
+</html>

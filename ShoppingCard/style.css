@@ -1,0 +1,118 @@
+body {
+	font-family: arial;
+}
+
+
+#banner {
+ 	position: relative;
+ 	margin-bottom: 20px;
+}
+
+#banner img {
+ 	width: 100%;
+}
+
+#banner h1 {
+ 	position: absolute;
+ 	top: 40%;
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	display: block;
+ 	color: white;
+ 	text-transform: uppercase;
+ 	font-size: 2.3em;
+}
+
+.navcontainer {
+  background-color: #131313;
+  display: flex;
+  justify-content: space-between; }
+  .navcontainer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0; }
+   
+    .navcontainer ul a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 1.2em; }
+    .navcontainer ul li a:hover {
+      background-color: #dedede;}
+
+.shop {
+	margin-right: 20px;
+	
+}
+
+#shoppinglist div {
+	width: 19%;
+	text-align: center;
+}
+
+#shoppinglist img {
+	width: 100%;
+
+}
+
+#shoppinglist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#shoppinglist button {
+	background-color: lightgray;
+	border: 1px solid lightgray;
+	border-radius: 15%;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+
+#shoppinglist button:hover {
+	box-shadow: 5px 5px 5px grey;
+}
+
+/* shoppingcard.html */
+
+#bodySc {
+	background-color: lightgray
+}
+
+#wrapperSc {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#containerScItems {
+	background-color: white;
+	border: 0.5px solid darkgray;
+	width: 60%;
+	margin-left: 20px;
+
+}
+
+#containerScItems h2 {
+	margin-left: 20px;
+}
+
+#ContainerSum {
+	background-color: white;
+	border: 0.5px solid darkgray;
+	width: 30%;
+	margin-right: 20px;
+}
+
+#ContainerSum h2 {
+	margin-left: 20px;
+}
+
+#product {
+	display: flex;
+	justify-content: space-between;
+}

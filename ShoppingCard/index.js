@@ -1,13 +1,21 @@
 // var shoesArticle = JSON.parse(shoes);
-console.log(shoesArticle);
+console.log(shoesArticle[1].Quantity);
 
 for (var i = 0; i < shoesArticle.length; i++) {
   $("<div />", {
-    "html": "<div class='image'><img src='" + shoesArticle[i].Img_Link + "'></div><p class='modell'>" + shoesArticle[i].Modell + "</p>" + "<p class='marke'>" + shoesArticle[i].Marke + "</p><button>Add to Cart</button>"
+    "html": "<div class='image'><img src='" + shoesArticle[i].Img_Link + "'></div><p class='modell'>" + shoesArticle[i].Modell + "</p>" + "<p class='marke'>" + shoesArticle[i].Marke + "</p><button id='" + shoesArticle[i].id + "'>Add to Cart</button>"
   }).appendTo('#shoppinglist');
  }
 
 
+function updateArticles () {
+    for (var i = 0; i < shoesArticle.length; i++) {
+    	shoesArticle[i].Quantity += 1;
+    }
+}
+
+updateArticles();
+console.table(shoesArticle[i].Quantity);
 
 
 // for (var i = 0; i < shoesArticle.length; i++) {
